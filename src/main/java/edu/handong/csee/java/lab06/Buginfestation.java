@@ -1,5 +1,16 @@
 package edu.handong.csee.java.lab06;
 import java.util.Scanner;
+
+/**
+ * This class defines Buginfestation object.<br>
+ * class Buginfestation has computeNumOfBugsToUseKiller() method.<br>
+ * computeNumOfBugsToUseKiller method calculates totalBugVolume and countWeek by the time totalBugVolume bigger than houseVolume.<br>
+ * Also, it prints startPopulation,  houseVolume, countWeeks, population, and totalBugVolume.<br>
+ * 
+ * @author YJW
+ * 
+ */
+
 public class Buginfestation {
 	
 	final double GROWTH_RATE = 0.95;
