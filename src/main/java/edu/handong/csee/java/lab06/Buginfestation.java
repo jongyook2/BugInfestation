@@ -1,5 +1,5 @@
-package edu.handong.csee.java.lab06;
-import java.util.Scanner;
+package edu.handong.csee.java.lab06; //package name
+import java.util.Scanner; //import standard input from keyboard
 
 /**
  * This class defines Buginfestation object.<br>
@@ -11,27 +11,28 @@ import java.util.Scanner;
  * 
  */
 
-public class Buginfestation {
+public class Buginfestation { //declares class, name is Buginfestation
 	
-	final double GROWTH_RATE = 0.95;
-	final double ONE_BUG_VOLUME = 0.002;
+	final double GROWTH_RATE = 0.95; //declare instance variable=> growth rate
+	final double ONE_BUG_VOLUME = 0.002; //eclare instance variable=> first bug volume
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { //public static void main! method declaration. we use methods here
 		
-		Buginfestation myCesco = new Buginfestation();
-		myCesco.computeNumOfBugsToUseKiller();
+		Buginfestation myCesco = new Buginfestation(); // instantiate Class Buginfestation to myCesco.
+		myCesco.computeNumOfBugsToUseKiller(); //method computeNumofBugsToUseKiller() of myCesco call
 	}
-	public void computeNumOfBugsToUseKiller() {
-		Scanner keepWork =new Scanner(System.in);
-		double houseVolume = keepWork.nextDouble();
-		double startPopulation = keepWork.nextDouble();
+	public void computeNumOfBugsToUseKiller() { // public void omputeNumOfBugsToUseKiller method declaration
+		Scanner keepWork =new Scanner(System.in); // instantiate Class Scanner to keyboard(input)
+		double houseVolume = keepWork.nextDouble(); //bouseVolume is input(double type) from keyboard
+		double startPopulation = keepWork.nextDouble(); //startPopulation is input(double type) from keyboard
 		
-		double population = startPopulation;
-		double totalBugVolume = population * ONE_BUG_VOLUME;//ctrl+스페이스바
+		double population = startPopulation; //declare local variable population and initialization
+		double totalBugVolume = population * ONE_BUG_VOLUME; //declare local variable totalBugVolume and initialization
+		//ctrl+스페이스바(tip)
 		
-		int countWeeks = 0;
+		int countWeeks = 0; //declare local variable countWeeks and initialization
 		
-		while(totalBugVolume < houseVolume) {
+		while(totalBugVolume < houseVolume) { //loop by the time totalBugVolume is larger than houseVolume
 			double newBugs = population * GROWTH_RATE;
 			double newBugVolume = newBugs * ONE_BUG_VOLUME;
 			population = population + newBugs;
