@@ -29,8 +29,9 @@ import java.util.Scanner; //import standard input from keyboard
 	}
 
 	/**
-	 * This method is computeNumOfBugsToUseKiller()
-	 * computeNumOfBugsToUseKiller method calculates totalBugVolume and countWeek by the time totalBugVolume bigger than houseVolume.<br>
+	 * This method is computeNumOfBugsToUseKiller() <br>
+	 * computeNumOfBugsToUseKiller method is received houseVolume and startPopulation by user. <br>
+	 * and calculates totalBugVolume and countWeek by the time totalBugVolume bigger than houseVolume.<br>
 	 * Also, it prints startPopulation,  houseVolume, countWeeks, population, and totalBugVolume.<br>
 	 */
 	public void computeNumOfBugsToUseKiller() { // public void omputeNumOfBugsToUseKiller method declaration
